@@ -4,8 +4,14 @@
              x:Class="MyFirstProject.MainPage">
 
     <StackLayout>
-        <Label Text="Title" FontSize="Header" HorizontalTextAlignment="Center"></Label>
-       
+        <Label Text="   Primary Colors" FontSize="Medium"></Label>
+        <Rectangle BackgroundColor="Red" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Rectangle BackgroundColor="Yellow" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Rectangle BackgroundColor="Blue" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Label Text="   Secondary Colors" FontSize="Medium"></Label>
+        <Rectangle BackgroundColor="Green" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Rectangle BackgroundColor="Orange" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Rectangle BackgroundColor="Purple" ScaleX=".95" HeightRequest="40"></Rectangle>
     </StackLayout>
 
 </ContentPage>
