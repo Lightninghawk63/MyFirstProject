@@ -4,14 +4,28 @@
              x:Class="MyFirstProject.MainPage">
 
     <StackLayout>
-        <Label Text="   Primary Colors" FontSize="Medium"></Label>
-        <Rectangle BackgroundColor="Red" ScaleX=".95" HeightRequest="40"></Rectangle>
-        <Rectangle BackgroundColor="Yellow" ScaleX=".95" HeightRequest="40"></Rectangle>
-        <Rectangle BackgroundColor="Blue" ScaleX=".95" HeightRequest="40"></Rectangle>
-        <Label Text="   Secondary Colors" FontSize="Medium"></Label>
-        <Rectangle BackgroundColor="Green" ScaleX=".95" HeightRequest="40"></Rectangle>
-        <Rectangle BackgroundColor="Orange" ScaleX=".95" HeightRequest="40"></Rectangle>
-        <Rectangle BackgroundColor="Purple" ScaleX=".95" HeightRequest="40"></Rectangle>
+        <Grid Margin="20,35,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".5*"/>
+                <ColumnDefinition Width=".5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Layouts"/>
+            <Button Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Image"/>
+            <Button Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Lists"/>
+            <Button Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Controls"/>
+        </Grid> 
     </StackLayout>
 
 </ContentPage>
