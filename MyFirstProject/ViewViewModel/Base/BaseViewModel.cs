@@ -25,6 +25,13 @@ namespace MyFirstProject.ViewViewModels
             set { SetProperty(ref title, value); }
         }
 
+        string subtitle = string.Empty;
+        public string Subtitle
+        {
+            get { return subtitle; }
+            set { SetProperty(ref subtitle, value); }
+        }
+
         protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",
             Action onChanged = null)

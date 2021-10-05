@@ -9,10 +9,11 @@
             Padding="1"
             CornerRadius="0">
 
-            <Label Text="My Mobile App!"
+            <Label Text="{Binding Subtitle}"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    FontSize="36"/>
+
         </Frame>
 
         <Grid Margin="20,35,20,20">
@@ -26,16 +27,20 @@
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
                    Grid.Column="0"
-                   Text="Layouts"/>
+                   Text="Layouts"
+                    Command="{Binding OnLayoutsMenuClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="1"
-                   Text="Image"/>
+                   Text="Image"
+                   Command="{Binding OnImageMenuClicked}"/>
             <Button Grid.Row="1"
                    Grid.Column="0"
-                   Text="Lists"/>
+                   Text="Lists"
+                   Command="{Binding OnListMenuClicked}"/>
             <Button Grid.Row="1"
                    Grid.Column="1"
-                   Text="Controls"/>
+                   Text="Controls"
+                   Command="{Binding OnControlsMenuClicked}"/>
         </Grid> 
     </StackLayout>
 
