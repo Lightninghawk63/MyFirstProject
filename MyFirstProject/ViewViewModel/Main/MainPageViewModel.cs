@@ -9,8 +9,8 @@ namespace MyFirstProject.ViewViewModel.Main
 {
     public class MainPageViewModel : BaseViewModel
     {
-        private ICommand OnLayoutsMenuClicked { get; set; }
-        private ICommand OnControlsMenuClicked { get; set; }
+        public ICommand OnLayoutsMenuClicked { get; set; }
+        public ICommand OnControlsMenuClicked { get; set; }
 
         public MainPageViewModel()
         {

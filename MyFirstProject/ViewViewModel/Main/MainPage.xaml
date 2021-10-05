@@ -28,7 +28,7 @@
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Layouts"
-                    Command="{Binding OnLayoutsMenuClicked}"/>
+                   Command="{Binding OnLayoutsMenuClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="1"
                    Text="Image"
