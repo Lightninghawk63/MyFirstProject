@@ -10,7 +10,7 @@ namespace MyFirstProject.ViewViewModel.ListView
     {
         public ListViewMenuViewModel()
         {
-            Title = Titles.ImageTitle;
+            Title = Titles.ListViewTitle;
         }
     }
 }

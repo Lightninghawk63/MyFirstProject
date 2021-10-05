@@ -10,7 +10,7 @@ namespace MyFirstProject.ViewViewModel.Layouts
     {
         public LayoutsMenuViewModel()
         {
-            Title = Titles.ImageTitle;
+            Title = Titles.LayoutsTitle;
         }
     }
 }
