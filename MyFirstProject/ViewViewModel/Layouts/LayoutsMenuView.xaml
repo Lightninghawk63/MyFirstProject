@@ -5,9 +5,10 @@
              Title="{Binding Title}">
 
     <StackLayout>
-        <Label Text="Layouts Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Absolute Layout"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
     </StackLayout>
 
 </ContentPage>

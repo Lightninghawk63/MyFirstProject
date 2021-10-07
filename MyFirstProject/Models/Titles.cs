@@ -18,6 +18,7 @@ namespace MyFirstProject.Models
 
         //Layouts
         public static string LayoutsTitle = "Layouts";
+        public static string AbsoluteLayoutTitle = "AbsoluteLayout";
 
         //ListView
         public static string ListViewTitle = "ListView";
