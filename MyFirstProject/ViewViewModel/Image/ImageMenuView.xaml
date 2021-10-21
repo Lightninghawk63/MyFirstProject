@@ -6,13 +6,14 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Image Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Embedded Images"
                    Command="{Binding OnEmbeddedImagesClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Embedded Image Project"
+                   Command="{Binding OnEmbeddedImageProjectClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

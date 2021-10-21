@@ -16,6 +16,7 @@ namespace MyFirstProject.Models
         //Image
         public static string ImageTitle = "Image";
         public static string EmbeddedImagesTitle = "Embedded Images";
+        public static string EmbeddedImageProjectTitle = "Embedded Image Project";
 
         //Layouts
         public static string LayoutsTitle = "Layouts";
