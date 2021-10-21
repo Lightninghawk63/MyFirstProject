@@ -9,6 +9,10 @@
             <Label Text="Image Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Embedded Images"
+                   Command="{Binding OnEmbeddedImagesClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
