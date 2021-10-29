@@ -15,8 +15,10 @@ namespace MyFirstProject.Models
 
         //Image
         public static string ImageTitle = "Image";
-        public static string EmbeddedImagesTitle = "Embedded Images";
+        public static string EmbeddedImagesTitle = "Embedded Image";
         public static string EmbeddedImageProjectTitle = "Embedded Image Project";
+        public static string URLImageTitle = "URL Image";
+        public static string URLImageProjectTitle = "URL Image Project";
 
         //Layouts
         public static string LayoutsTitle = "Layouts";
@@ -24,7 +26,8 @@ namespace MyFirstProject.Models
         public static string RelativeLayoutTitle = "Relative Layout";
         public static string AbsoluteLayoutProjectTitle = "Absolute Layout Project";
         public static string RelativeLayoutProjectTitle = "Relative Layout Project";
-
+        public static string CacheImageTitle = "Cache Image";
+        public static string ActivityIndicatorTitle = "Activtiy Indicator";
         //ListView
         public static string ListViewTitle = "ListView";
     }

@@ -29,13 +29,25 @@
     <EmbeddedResource Update="ViewViewModel\Controls\ControlsMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\ActivityIndicator\ActivityIndicatorView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\CacheImage\CacheImageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\Image\EmbeddedImageProject\EmbeddedImageProjectView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ViewViewModel\Image\EmbeddedImages\EmbeddedImagesView.xaml">
+    <EmbeddedResource Update="ViewViewModel\Image\EmbeddedImage\EmbeddedImagesView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\Image\ImageMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\URLImageProject\URLImageProjectView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\URLImage\URLImageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\Layouts\AbsoluteLayoutProject\AbsoluteLayoutProjectView.xaml">

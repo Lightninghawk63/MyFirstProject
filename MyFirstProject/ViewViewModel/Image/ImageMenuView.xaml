@@ -8,12 +8,28 @@
         <StackLayout>
             <Button Grid.Row="0"
                    Grid.Column="0"
-                   Text="Embedded Images"
+                   Text="Embedded Image"
                    Command="{Binding OnEmbeddedImagesClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Embedded Image Project"
                    Command="{Binding OnEmbeddedImageProjectClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="URL Image"
+                   Command="{Binding OnURLImageClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="URL Image Project"
+                   Command="{Binding OnURLImageProjectClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Cache Image"
+                   Command="{Binding OnCacheImageClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Activity Indicator"
+                   Command="{Binding OnActivityIndicatorClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -9,5 +9,15 @@ namespace MyFirstProject.Models
     {
         //Embedded Image Project
         public static ImageSource EmbeddedImageProjectImageSrc = ImageSource.FromResource("MyFirstProject.Images.Hawk.jpg");
+
+        //URL Image Project
+        public static ImageSource GetImage()
+        {
+            var imgsrc = new UriImageSource { Uri = new Uri("https://placeimg.com/640/480/arch") };
+            imgsrc.CachingEnabled = false;
+            imgsrc.CacheValidity = TimeSpan.FromHours(1);
+
+            return imgsrc;
+        }
     }
 }

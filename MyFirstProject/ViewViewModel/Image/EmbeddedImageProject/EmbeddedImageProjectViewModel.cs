@@ -9,12 +9,14 @@ using Xamarin.Forms;
 
 namespace MyFirstProject.ViewViewModel.Image.EmbeddedImageProject
 {
-    public class EmbeddedImageProjectViewModel : BaseImageViewModel
+    public class EmbeddedImageProjectViewModel : BaseViewModel
     {
+        public ImageSource EmbeddedImage { get; set; }
+
         public EmbeddedImageProjectViewModel()
         {
             Title = Titles.EmbeddedImageProjectTitle;
-            Image = Images.EmbeddedImageProjectImageSrc;
+            EmbeddedImage = Images.EmbeddedImageProjectImageSrc;
         }
     }
 }
