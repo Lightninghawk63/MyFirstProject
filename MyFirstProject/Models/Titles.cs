@@ -28,7 +28,9 @@ namespace MyFirstProject.Models
         public static string RelativeLayoutProjectTitle = "Relative Layout Project";
         public static string CacheImageTitle = "Cache Image";
         public static string ActivityIndicatorTitle = "Activtiy Indicator";
+
         //ListView
         public static string ListViewTitle = "ListView";
+        public static string ListViewNamesTitle = "List View Names";
     }
 }

@@ -6,9 +6,10 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="List Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="List View Names"
+                   Command="{Binding OnListViewNamesClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -68,5 +68,8 @@
     <EmbeddedResource Update="ViewViewModel\ListView\ListViewMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\ListView\ListViewNames\ListViewNamesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
