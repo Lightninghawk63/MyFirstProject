@@ -9,7 +9,7 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewNames
 {
     public class ListViewNamesViewModel : BaseViewModel
     {
-        public ObservableCollection<Person> Persons {get;}
+        public ObservableCollection<Person> Persons { get; set; }
 
         private List<Person> _person;
 

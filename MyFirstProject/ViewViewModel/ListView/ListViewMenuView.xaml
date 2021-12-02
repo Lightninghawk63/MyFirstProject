@@ -8,8 +8,21 @@
         <StackLayout>
             <Button Grid.Row="0"
                    Grid.Column="0"
-                   Text="List View Names"
+                   Text="List View With Names"
                    Command="{Binding OnListViewNamesClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="List View With Images"
+                   Command="{Binding OnListViewImagesClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="List View With Buttons"
+                   Command="{Binding OnListViewButtonsClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="List View With Icons"
+                   Command="{Binding OnListViewIconsClicked}"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
