@@ -59,7 +59,7 @@
                         <StackLayout Grid.Row="1">
                             <Rectangle BackgroundColor="Black"
                                   ScaleX="100"
-                                  HeightRequest="3"></Rectangle>
+                                  HeightRequest="3" />
                         </StackLayout>
                     </Grid>
                     

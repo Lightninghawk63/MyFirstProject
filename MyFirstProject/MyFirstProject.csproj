@@ -65,6 +65,9 @@
     <EmbeddedResource Update="ViewViewModel\Layouts\RelativeLayout\RelativeLayoutView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\ListView\ListViewButtons\EditCardView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\ListView\ListViewButtons\ListViewButtonsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

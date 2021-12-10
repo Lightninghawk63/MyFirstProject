@@ -10,7 +10,6 @@ namespace MyFirstProject.Models
         public string Name { get; set; }
         public string Suit { get; set; }
         public string Image { get; set; }
-       public int Index { get; set; }
 
         public PlayingCard(string n, string s, string i)
         {
@@ -19,14 +18,15 @@ namespace MyFirstProject.Models
             Image = i;
         }
 
-        public PlayingCard(string n, string s, int i)
+        public PlayingCard(string n, string s)
         {
             Name = n;
             Suit = s;
-            Index = i;
         }
+        public PlayingCard()
+        { }
 
-        public static List<PlayingCard> GetCard()
+            public static List<PlayingCard> GetCard()
         {
             return new List<PlayingCard>
             {
@@ -40,10 +40,10 @@ namespace MyFirstProject.Models
         {
             return new List<PlayingCard>
             {
-                new PlayingCard("Jack", "Clubs", 0),
-                new PlayingCard("Queen", "Diamonds", 1),
-                new PlayingCard("King", "Hearts", 2),
-                new PlayingCard("Ace", "Spades", 3)
+                new PlayingCard("Jack", "Clubs"),
+                new PlayingCard("Queen", "Diamonds"),
+                new PlayingCard("King", "Hearts"),
+                new PlayingCard("Ace", "Spades")
             };
         }
     }

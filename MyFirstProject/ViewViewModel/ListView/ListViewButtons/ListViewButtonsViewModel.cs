@@ -57,12 +57,32 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
         {
             get
             {
-                return new Command<PlayingCard>((PlayingCard mov) =>
+                return new Command<PlayingCard>((PlayingCard card) =>
                 {
-                    Cards.Remove(mov);
+                    Cards.Remove(card);
                 });
             }
         }
-    
+
+        public Command<PlayingCard> UpdateCommand
+        {
+            get
+            {
+                return new Command<PlayingCard>((PlayingCard card) =>
+                {
+                    Application.Current.MainPage.Navigation.PushAsync(new EditCardView(card));
+
+                    MessagingCenter.Subscribe<PlayingCard>(this, "UpdatePlayingCards", async (data) =>
+                    {
+                        var index = Cards.IndexOf(card);
+
+                        Cards.RemoveAt(index);
+                        Cards.Insert(index, data);
+
+                        MessagingCenter.Unsubscribe<PlayingCard>(this, "UpdatePlayingCards");
+                    });
+                });
+            }
+        }
     }
 }
