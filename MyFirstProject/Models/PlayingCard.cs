@@ -18,6 +18,10 @@ namespace MyFirstProject.Models
             Image = i;
         }
 
+        public PlayingCard(string n)
+        {
+            Name = n;
+        }
         public PlayingCard(string n, string s)
         {
             Name = n;

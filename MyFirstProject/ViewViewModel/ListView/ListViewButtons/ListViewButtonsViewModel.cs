@@ -72,14 +72,14 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
                 {
                     Application.Current.MainPage.Navigation.PushAsync(new EditCardView(card));
 
-                    MessagingCenter.Subscribe<PlayingCard>(this, "UpdatePlayingCards", async (data) =>
+                    MessagingCenter.Subscribe<PlayingCard>(this, "UpdatedCards", async (data) =>
                     {
                         var index = Cards.IndexOf(card);
 
                         Cards.RemoveAt(index);
                         Cards.Insert(index, data);
 
-                        MessagingCenter.Unsubscribe<PlayingCard>(this, "UpdatePlayingCards");
+                        MessagingCenter.Unsubscribe<PlayingCard>(this, "UpdatedCards");
                     });
                 });
             }

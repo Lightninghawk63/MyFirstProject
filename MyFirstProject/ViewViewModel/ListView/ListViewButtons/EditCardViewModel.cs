@@ -41,8 +41,7 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
                 return;
             }
 
-            PlayingCard cards = new PlayingCard();
-            cards.Name = _cardText;
+            PlayingCard cards = new PlayingCard(_cardText);
 
             MessagingCenter.Send<PlayingCard>(cards, "UpdatedCards");
             Application.Current.MainPage.Navigation.PopAsync();
