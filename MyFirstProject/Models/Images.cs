@@ -10,6 +10,10 @@ namespace MyFirstProject.Models
         //Embedded Image Project
         public static ImageSource EmbeddedImageProjectImageSrc = ImageSource.FromResource("MyFirstProject.Images.Hawk.jpg");
 
+        //Icons Project
+        public static ImageSource EditButton = ImageSource.FromResource("MyFirstProject.Images.edit.png");
+        public static ImageSource DeleteButton = ImageSource.FromResource("MyFirstProject.Images.delete.png");
+
         //URL Image Project
         public static ImageSource GetImage()
         {

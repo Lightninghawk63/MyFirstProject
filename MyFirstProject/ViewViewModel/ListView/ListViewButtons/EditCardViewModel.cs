@@ -16,7 +16,7 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
 
         public EditCardViewModel()
         {
-            Title = Titles.ListViewEditButtonsTitle;
+            Title = Titles.ListViewEditTitle;
             UpdateButtonClicked = new Command(PerformSave);
         }
 

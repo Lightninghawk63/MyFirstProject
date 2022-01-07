@@ -84,5 +84,22 @@ namespace MyFirstProject.ViewViewModel.ListView.ListViewButtons
                 });
             }
         }
+
+        public Command AddCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    Application.Current.MainPage.Navigation.PushAsync(new AddCardView());
+                    MessagingCenter.Subscribe<PlayingCard>(this, "AddCards", async (data) =>
+                    {
+                        Cards.Add(data);
+
+                        MessagingCenter.Unsubscribe<PlayingCard>(this, "AddCards");
+                    });
+                });
+            }
+        }
     }
 }

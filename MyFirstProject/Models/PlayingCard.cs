@@ -11,6 +11,9 @@ namespace MyFirstProject.Models
         public string Suit { get; set; }
         public string Image { get; set; }
 
+        public ImageSource EditButton { get; } = ImageSource.FromResource("MyFirstProject.Images.edit.png");
+        public ImageSource DeleteButton { get; } = ImageSource.FromResource("MyFirstProject.Images.delete.png");
+
         public PlayingCard(string n, string s, string i)
         {
             Name = n;

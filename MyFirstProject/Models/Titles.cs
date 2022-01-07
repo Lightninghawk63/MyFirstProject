@@ -34,9 +34,9 @@ namespace MyFirstProject.Models
         public static string ListViewNamesTitle = "List View Names";
         public static string ListViewImagesTitle = "List View Images";
         public static string ListViewButtonsTitle = "List View Buttons";
-        public static string ListViewEditButtonsTitle = "List View Edit Buttons";
+        public static string ListViewEditTitle = "List View Edit";
         public static string ListViewIconsTitle = "List View Icons";
-
+        public static string ListViewAddTitle = "List View Add";
         public static string AddTitle { get; set; }
     }
 }

@@ -11,11 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\delete.png" />
+    <None Remove="Images\edit.png" />
     <None Remove="Images\Hawk.jpg" />
     <None Remove="Images\SkyImage.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\delete.png" />
+    <EmbeddedResource Include="Images\edit.png" />
     <EmbeddedResource Include="Images\Hawk.jpg" />
     <EmbeddedResource Include="Images\SkyImage.jpg" />
   </ItemGroup>
@@ -63,6 +67,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\Layouts\RelativeLayout\RelativeLayoutView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\ListView\ListViewButtons\AddCardView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModel\ListView\ListViewButtons\EditCardView.xaml">
