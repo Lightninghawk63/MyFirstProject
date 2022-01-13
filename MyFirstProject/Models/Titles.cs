@@ -12,6 +12,8 @@ namespace MyFirstProject.Models
 
         //Controls
         public static string ControlsTitle = "Controls";
+        public static string StepperTitle = "Stepper";
+        public static string SliderTitle = "Slider";
 
         //Image
         public static string ImageTitle = "Image";

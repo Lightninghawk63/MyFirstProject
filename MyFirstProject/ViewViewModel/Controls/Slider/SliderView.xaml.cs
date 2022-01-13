@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModel.Controls.Slider
         public SliderView()
         {
             InitializeComponent();
+            BindingContext = new SliderViewModel();
         }
     }
 }
