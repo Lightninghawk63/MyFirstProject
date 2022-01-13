@@ -30,7 +30,7 @@
                 <Button Grid.Row="1"
                    Grid.Column="0"
                    Text="Swtich"
-                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+                   Command="{Binding OnSwitchClicked}"/>
 
                 <Button Grid.Row="1"
                    Grid.Column="1"
