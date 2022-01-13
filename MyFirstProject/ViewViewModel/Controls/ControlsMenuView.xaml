@@ -6,9 +6,43 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Controls Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid Padding="7">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Slider"
+                   Command="{Binding OnSliderClicked}"/>
+
+                <Button Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Stepper"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+
+                <Button Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Swtich"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+
+                <Button Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Entry"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+            </Grid>
+            
+            <Button Text="Picker"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+            
+            <Button Text="Date and Time Picker"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
