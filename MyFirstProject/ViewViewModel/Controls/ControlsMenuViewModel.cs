@@ -1,4 +1,5 @@
 ﻿using MyFirstProject.Models;
+using MyFirstProject.ViewViewModel.Controls.Entry;
 using MyFirstProject.ViewViewModel.Controls.Slider;
 using MyFirstProject.ViewViewModel.Controls.Stepper;
 using MyFirstProject.ViewViewModel.Controls.Switch;
@@ -16,12 +17,14 @@ namespace MyFirstProject.ViewViewModel.Controls
         public ICommand OnSliderClicked { get; set; }
         public ICommand OnStepperClicked { get; set; }
         public ICommand OnSwitchClicked { get; set; }
+        public ICommand OnEntryClicked { get; set; }
         public ControlsMenuViewModel()
         {
             Title = Titles.ControlsTitle;
             OnSliderClicked = new Command(OnSliderClickedAsync);
             OnStepperClicked = new Command(OnStepperClickedAsync);
             OnSwitchClicked = new Command(OnSwitchClickedAsync);
+            OnEntryClicked = new Command(OnEntryClickedAsync);
         }
 
         private async void OnSliderClickedAsync(object obj)
@@ -37,6 +40,11 @@ namespace MyFirstProject.ViewViewModel.Controls
         private async void OnSwitchClickedAsync(object obj)
         {
             await Application.Current.MainPage.Navigation.PushAsync(new SwitchView());
+        }
+
+        private async void OnEntryClickedAsync(object obj)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new EntryMenuView());
         }
     }
 }
