@@ -37,7 +37,7 @@ namespace MyFirstProject.ViewViewModel.ListView
         }
         private async void OnListViewButtonsClickedAsync(object obj)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new ListViewButtonsView());
+            await Application.Current.MainPage.Navigation.PushAsync(new ListViewButtonsViewTwo());
         }
         private async void OnListViewIconsClickedAsync(object obj)
         {

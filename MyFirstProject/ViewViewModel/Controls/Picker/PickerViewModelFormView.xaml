@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Controls.Picker.PickerViewModelFormView"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="0,20">
+            <Label Text="Picker View Model"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="Blue"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+
+                <Picker x:Name="pickerViewModel"
+                             Title="Select a Card"
+                             TitleColor="DarkRed"
+                             SelectedItem="{Binding SelectedItem}"
+                             VerticalOptions="FillAndExpand"
+                             WidthRequest="300"
+                             ItemsSource="{Binding CardNames}"/>
+
+
+                <Button BackgroundColor="Transparent"
+                        Text="Submit"
+                        ImageSource="{Binding SubmitButton}"
+                        Command="{Binding OnSubmitClicked}"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

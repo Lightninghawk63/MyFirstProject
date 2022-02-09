@@ -1,15 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local ="crl-namespace:MyFirstProject.ViewViewModel.ListViewButtons.ListViewButtonsView"
              xmlns:model="clr-namespace:MyFirstProject.Models"
-             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewButtons.ListViewButtonsView"
+             x:Class="MyFirstProject.ViewViewModel.ListView.ListViewButtons.ListViewButtonsViewTwo"
              Title = "{Binding Title}">
-    
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" x:Name="Add Button" Command="{Binding AddCommand}" />
-    </ContentPage.ToolbarItems>
-    
+
     <ContentPage.Content>
         <CollectionView x:Name="ItemsListView"
                     ItemsSource="{Binding Cards, Mode=TwoWay}"
@@ -40,7 +35,7 @@
                                FontAttributes="Bold"/>
                         </StackLayout>
 
-                        
+
                         <StackLayout Grid.Column="2">
                             <Button Text="Update"
                                     ScaleX=".6"
@@ -68,7 +63,7 @@
                                   HeightRequest="3" />
                         </StackLayout>
                     </Grid>
-                    
+
                 </DataTemplate>
 
             </CollectionView.ItemTemplate>

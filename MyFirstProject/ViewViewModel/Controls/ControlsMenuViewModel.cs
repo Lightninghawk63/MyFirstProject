@@ -1,8 +1,10 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel.Controls.Entry;
+using MyFirstProject.ViewViewModel.Controls.Picker;
 using MyFirstProject.ViewViewModel.Controls.Slider;
 using MyFirstProject.ViewViewModel.Controls.Stepper;
 using MyFirstProject.ViewViewModel.Controls.Switch;
+using MyFirstProject.ViewViewModel.TimeAndDate;
 using MyFirstProject.ViewViewModels;
 using System;
 using System.Collections.Generic;
@@ -18,6 +20,8 @@ namespace MyFirstProject.ViewViewModel.Controls
         public ICommand OnStepperClicked { get; set; }
         public ICommand OnSwitchClicked { get; set; }
         public ICommand OnEntryClicked { get; set; }
+        public ICommand OnPickerClicked { get; set; }
+        public ICommand OnTimeAndDatePickerClicked { get; set; }
         public ControlsMenuViewModel()
         {
             Title = Titles.ControlsTitle;
@@ -25,6 +29,8 @@ namespace MyFirstProject.ViewViewModel.Controls
             OnStepperClicked = new Command(OnStepperClickedAsync);
             OnSwitchClicked = new Command(OnSwitchClickedAsync);
             OnEntryClicked = new Command(OnEntryClickedAsync);
+            OnPickerClicked = new Command(OnPickerClickedAsync);
+            OnTimeAndDatePickerClicked = new Command(OnTimeAndDatePickerClickedAsync);
         }
 
         private async void OnSliderClickedAsync(object obj)
@@ -45,6 +51,16 @@ namespace MyFirstProject.ViewViewModel.Controls
         private async void OnEntryClickedAsync(object obj)
         {
             await Application.Current.MainPage.Navigation.PushAsync(new EntryMenuView());
+        }
+
+        private async void OnPickerClickedAsync(object obj)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerMenuView());
+        }
+
+        private async void OnTimeAndDatePickerClickedAsync(object obj)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new TimeAndDatePickerView());
         }
     }
 }

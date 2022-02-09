@@ -18,7 +18,11 @@ namespace MyFirstProject.Models
         public static string EntryMenuTitle = "Entry Menu";
         public static string EntryFormTitle = "Entry Form";
         public static string EntryResultTitle = "Entry Result";
-
+        public static string PickerMenuTitle = "Picker Menu";
+        public static string PickerFormTitle = "Picker Form";
+        public static string PickerResultTitle = "Picker Result";
+        public static string TimeAndDatePickerTitle = "Time And Date Picker Menu";
+        public static string TimeAndDatePickerXAMLTitle = "Time And Date Picker XAML";
         //Image
         public static string ImageTitle = "Image";
         public static string EmbeddedImagesTitle = "Embedded Image";
