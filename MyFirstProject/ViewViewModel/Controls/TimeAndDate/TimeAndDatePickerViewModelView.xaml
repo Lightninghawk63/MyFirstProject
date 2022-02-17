@@ -1,20 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModel.Controls.TimeAndDate.TimeAndDatePickerXAMLView"
-             Title = "{Binding Title}">
-    
+             x:Class="MyFirstProject.ViewViewModel.Controls.TimeAndDate.TimeAndDatePickerViewModelView">
     <ContentPage.Content>
-        <StackLayout Padding="20"
-                     VerticalOptions="CenterAndExpand">
-            <Label Text="Start Date"
-                   FontAttributes="Bold"
-                   FontSize="Large"
-                   TextColor="Crimson"
-                   HorizontalOptions="CenterAndExpand"/>
-
-            <DatePicker MinimumDate="01/01/2021"
-                        Date="01/01/2021"
+        <StackLayout>
+            <DatePicker x:Name="DPStartDate"
+                        Date="{Binding StartMinDate}"
+                        MaximumDate="{Binding MaximumDate}"
                         DateSelected="StartDatePicker_DateSelected"
                         BackgroundColor="DarkGreen"
                         TextColor="White"
@@ -29,15 +21,25 @@
                    TextColor="Blue"
                    HorizontalOptions="CenterAndExpand"/>
 
-            <DatePicker MinimumDate="01/01/2021"
-                        Date="01/01/2021"
+            <DatePicker x:Name="DPEndDate"
+                        MinimumDate="{Binding EndMinDate}"
+                        Date="{Binding EndCurrentDate}"
+                        MaximumDate="{Binding MaximumDate}"
                         DateSelected="EndDatePicker_DateSelected"
                         BackgroundColor="DarkRed"
                         TextColor="White"
                         InputTransparent="False"/>
 
-            <Button BackgroundColor="Orange"
-                    Clicked="Button_Clicked"/>
+            <Switch IsToggled="False"
+                        Toggled="DisplayDifference"
+                        ThumbColor="Red"
+                        OnColor="Orange"/>
+            
+            <Button Text="Submit"
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Bold"
+                BackgroundColor="Orange"
+                Command="{Binding OnSubmitClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

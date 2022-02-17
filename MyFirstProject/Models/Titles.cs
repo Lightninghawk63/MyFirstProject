@@ -23,6 +23,8 @@ namespace MyFirstProject.Models
         public static string PickerResultTitle = "Picker Result";
         public static string TimeAndDatePickerTitle = "Time And Date Picker Menu";
         public static string TimeAndDatePickerXAMLTitle = "Time And Date Picker XAML";
+        public static string TimeAndDatePickerViewModelTitle = "Time And Date Picker View Model";
+
         //Image
         public static string ImageTitle = "Image";
         public static string EmbeddedImagesTitle = "Embedded Image";

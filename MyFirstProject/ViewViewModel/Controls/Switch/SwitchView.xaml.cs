@@ -27,8 +27,6 @@ namespace MyFirstProject.ViewViewModel.Controls.Switch
             {
                 label.TextColor = Color.Blue;
             }
-
-
-            }
+        }
     }
 }
